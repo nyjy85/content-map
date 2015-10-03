@@ -1,0 +1,23 @@
+
+* {
+  box-sizing: border-box;
+}
+
+// .leaflet-container img {
+//   max-height: none;
+//   max-width: none;
+// }
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// Add your fractal Sass files below!
+@import 'components/navbar/navbar';
+@import 'home/home';
+@import 'modules/modules';
+// @import '../../node_modules/leaflet/dist/leaflet.css';
+// @import '../../node_modules/angular-ui-boostrap/ui-bootstrap-csp.css';
