@@ -58,6 +58,7 @@ gulp.task('browserify', function() {
     .bundle()
     //Pass desired output filename to vinyl-source-stream
     .pipe(source('bundle.js'))
+    .pipe(plumber())
     // Start piping stream to tasks!
     .pipe(gulp.dest('./client/build/'));
 });

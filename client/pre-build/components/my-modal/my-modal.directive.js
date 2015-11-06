@@ -8,8 +8,7 @@ angular.module('page.directive')
     },
     link: function(scope, elem, attrs){
         console.log('ttaaaab', scope.contentTab);
-        // how strange, isolate scope only worked because
-        // i changed the scope variable name to bat
+	console.log('I wrote this inside VIM!');
     }
   };
 }]);
